@@ -2,6 +2,7 @@
   "name": "nautical",
   "version": "0.0.1",
   "description": "Wrapper for DigitalOcean's v2 API",
+  "repository": "git://github.com/pauldenotter/nautical",
   "main": "index.js",
   "keywords": [
     "DigitalOcean",
@@ -13,5 +14,9 @@
     "droplet"
   ],
   "author": "Paul den Otter <pauldenotter@gmail.com>",
+  "bugs": {
+  	"url": "https://github.com/pauldenotter/nautical/issues",
+  	"email": "pauldenotter+nautical@gmail.com"
+  },
   "license": "MIT"
 }
