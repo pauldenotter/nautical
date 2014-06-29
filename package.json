@@ -15,8 +15,14 @@
   ],
   "author": "Paul den Otter <pauldenotter@gmail.com>",
   "bugs": {
-  	"url": "https://github.com/pauldenotter/nautical/issues",
-  	"email": "pauldenotter+nautical@gmail.com"
+    "url": "https://github.com/pauldenotter/nautical/issues",
+    "email": "pauldenotter+nautical@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.8.5",
+    "gulp-jshint": "~1.6.3",
+    "gulp-yuidoc": "~0.1.2",
+    "yuidoc-bootstrap-theme": "~1.0.2"
+  }
 }
