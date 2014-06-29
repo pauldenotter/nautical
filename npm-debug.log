@@ -1,0 +1,111 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/paul/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/paul/.npm/nautical/0.0.1/package.tgz', '.' ]
+11 verbose tarball /Users/paul/.npm/nautical/0.0.1/package.tgz
+12 verbose folder .
+13 info prepublish nautical@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/paul/.npm/1f1177db-tar.lock
+16 silly lockFile 704d5d37-l-npm-nautical-0-0-1-package-tgz tar:///Users/paul/.npm/nautical/0.0.1/package.tgz
+17 verbose lock tar:///Users/paul/.npm/nautical/0.0.1/package.tgz /Users/paul/.npm/704d5d37-l-npm-nautical-0-0-1-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 704d5d37-l-npm-nautical-0-0-1-package-tgz tar:///Users/paul/.npm/nautical/0.0.1/package.tgz
+21 silly lockFile 704d5d37-l-npm-nautical-0-0-1-package-tgz tar:///Users/paul/.npm/nautical/0.0.1/package.tgz
+22 silly lockFile e924a56c--paul-npm-nautical-0-0-1-package /Users/paul/.npm/nautical/0.0.1/package
+23 verbose lock /Users/paul/.npm/nautical/0.0.1/package /Users/paul/.npm/e924a56c--paul-npm-nautical-0-0-1-package.lock
+24 silly lockFile e924a56c--paul-npm-nautical-0-0-1-package /Users/paul/.npm/nautical/0.0.1/package
+25 silly lockFile e924a56c--paul-npm-nautical-0-0-1-package /Users/paul/.npm/nautical/0.0.1/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'nautical',
+28 silly publish   version: '0.0.1',
+28 silly publish   description: 'Wrapper for DigitalOcean\'s v2 API',
+28 silly publish   repository: { type: 'git', url: 'git://github.com/pauldenotter/nautical' },
+28 silly publish   main: 'index.js',
+28 silly publish   keywords:
+28 silly publish    [ 'DigitalOcean',
+28 silly publish      'API',
+28 silly publish      'Wrapper',
+28 silly publish      'v2',
+28 silly publish      'hosting',
+28 silly publish      'server',
+28 silly publish      'droplet' ],
+28 silly publish   author: { name: 'Paul den Otter', email: 'pauldenotter@gmail.com' },
+28 silly publish   bugs:
+28 silly publish    { url: 'https://github.com/pauldenotter/nautical/issues',
+28 silly publish      email: 'pauldenotter+nautical@gmail.com' },
+28 silly publish   license: 'MIT',
+28 silly publish   devDependencies:
+28 silly publish    { gulp: '~3.8.5',
+28 silly publish      'gulp-jshint': '~1.6.3',
+28 silly publish      'gulp-yuidoc': '~0.1.2',
+28 silly publish      'yuidoc-bootstrap-theme': '~1.0.2' },
+28 silly publish   readme: '# It\'s a wrap(per)\nThis node module wraps DigitalOcean\'s new v2 API (currently in public beta).\n\n## Install\nInstall the module by running the following commands on your command line\n\n```bash\n$ npm install --save nautical\n```\n\n## Usage\nIt\'s encouraged to put your DigitalOcean API token in a configuration file like:\n\nFile: config.json\n```javascript\n{\n\t"nautical": {\n\t\t"token": "your_token_here"\n\t}\n}\n```\n\nThen you can use the wrapper like this:\n\n```javascript\nvar config         = require(\'./config.json\').nautical,\n\tnauticalClient = require(\'nautical\').getClient(config);\n\nnatucialClient.sizes.list(function(err, reply) {\n\tif (err) throw err;\n\tconsole.log({\n\t\tresponseBody: reply.body,\n\t\tstatusCode: reply.res.statusCode,\n\t\theaders: reply.res.headers\n\t});\n});\n```\n\n## Participate in development\nPull requests will be greatly appreciated :)\n\n## More information\nFor more information visit the [DigitalOcean developers portal](https://developers.digitalocean.com/v2)\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'b49f3c36c799f644ad4c45cb03bb4cef671651d4',
+28 silly publish   homepage: 'https://github.com/pauldenotter/nautical',
+28 silly publish   _id: 'nautical@0.0.1',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: 'c40de480eae1aacc3eb7ab548db3bbeab03694ef',
+28 silly publish   _from: '.' }
+29 verbose url raw nautical
+30 verbose url resolving [ 'http://registry.npmjs.org/', './nautical' ]
+31 verbose url resolved http://registry.npmjs.org/nautical
+32 info trying registry request attempt 1 at 00:12:01
+33 http PUT http://registry.npmjs.org/nautical
+34 http 403 http://registry.npmjs.org/nautical
+35 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+35 verbose headers   'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=30',
+35 verbose headers   'content-length': '3874',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Sun, 29 Jun 2014 22:12:02 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-ams4130-AMS',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1404079921.538796,VS0,VE650' }
+36 error publish Failed PUT 403
+37 error Error: forbidden cannot modify pre-existing version: 0.0.1
+37 error old={"name":"nautical","version":"0.0.1","description":"Wrapper for DigitalOcean's v2 API","repository":{"type":"git","url":"git://github.com/pauldenotter/nautical"},"main":"index.js","keywords":["DigitalOcean","API","Wrapper","v2","hosting","server","droplet"],"author":{"name":"Paul den Otter","email":"pauldenotter@gmail.com"},"bugs":{"url":"https://github.com/pauldenotter/nautical/issues","email":"pauldenotter+nautical@gmail.com"},"license":"MIT","devDependencies":{"gulp":"~3.8.5","gulp-jshint":"~1.6.3","gulp-yuidoc":"~0.1.2","yuidoc-bootstrap-theme":"~1.0.2"},"gitHead":"55aea8b7e37eeeff7ac9cfdb022a553284a7cc14","homepage":"https://github.com/pauldenotter/nautical","_id":"nautical@0.0.1","scripts":{},"_shasum":"a35b0bf542b4977a5ce622a52baa79bc4e4b9861","_from":".","_npmVersion":"1.4.14","_npmUser":{"name":"pauldenotter","email":"pauldenotter@gmail.com"},"maintainers":[{"name":"pauldenotter","email":"pauldenotter@gmail.com"}],"dist":{"shasum":"a35b0bf542b4977a5ce622a52baa79bc4e4b9861","tarball":"http://registry.npmjs.org/nautical/-/nautical-0.0.1.tgz"}}
+37 error new={"name":"nautical","version":"0.0.1","description":"Wrapper for DigitalOcean's v2 API","repository":{"type":"git","url":"git://github.com/pauldenotter/nautical"},"main":"index.js","keywords":["DigitalOcean","API","Wrapper","v2","hosting","server","droplet"],"author":{"name":"Paul den Otter","email":"pauldenotter@gmail.com"},"bugs":{"url":"https://github.com/pauldenotter/nautical/issues","email":"pauldenotter+nautical@gmail.com"},"license":"MIT","devDependencies":{"gulp":"~3.8.5","gulp-jshint":"~1.6.3","gulp-yuidoc":"~0.1.2","yuidoc-bootstrap-theme":"~1.0.2"},"readme":"# It's a wrap(per)\u000aThis node module wraps DigitalOcean's new v2 API (currently in public beta).\u000a\u000a## Install\u000aInstall the module by running the following commands on your command line\u000a\u000a```bash\u000a$ npm install --save nautical\u000a```\u000a\u000a## Usage\u000aIt's encouraged to put your DigitalOcean API token in a configuration file like:\u000a\u000aFile: config.json\u000a```javascript\u000a{\u000a\u0009\"nautical\": {\u000a\u0009\u0009\"token\": \"your_token_here\"\u000a\u0009}\u000a}\u000a```\u000a\u000aThen you can use the wrapper like this:\u000a\u000a```javascript\u000avar config         = require('./config.json').nautical,\u000a\u0009nauticalClient = require('nautical').getClient(config);\u000a\u000anatucialClient.sizes.list(function(err, reply) {\u000a\u0009if (err) throw err;\u000a\u0009console.log({\u000a\u0009\u0009responseBody: reply.body,\u000a\u0009\u0009statusCode: reply.res.statusCode,\u000a\u0009\u0009headers: reply.res.headers\u000a\u0009});\u000a});\u000a```\u000a\u000a## Participate in development\u000aPull requests will be greatly appreciated :)\u000a\u000a## More information\u000aFor more information visit the [DigitalOcean developers portal](https://developers.digitalocean.com/v2)\u000a","readmeFilename":"README.md","gitHead":"b49f3c36c799f644ad4c45cb03bb4cef671651d4","homepage":"https://github.com/pauldenotter/nautical","_id":"nautical@0.0.1","scripts":{},"_shasum":"c40de480eae1aacc3eb7ab548db3bbeab03694ef","_from":".","_npmVersion":"1.4.14","_npmUser":{"name":"pauldenotter","email":"pauldenotter@gmail.com"},"maintainers":[{"name":"pauldenotter","email":"pauldenotter@gmail.com"}],"dist":{"shasum":"c40de480eae1aacc3eb7ab548db3bbeab03694ef","tarball":"http://registry.npmjs.org/nautical/-/nautical-0.0.1.tgz"}}: nautical
+37 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:274:14)
+37 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:65)
+37 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+37 error     at Request.emit (events.js:98:17)
+37 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+37 error     at Request.emit (events.js:117:20)
+37 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+37 error     at IncomingMessage.emit (events.js:117:20)
+37 error     at _stream_readable.js:929:16
+37 error     at process._tickCallback (node.js:419:13)
+38 error If you need help, you may report this *entire* log,
+38 error including the npm and node versions, at:
+38 error     <http://github.com/npm/npm/issues>
+39 error System Darwin 13.2.0
+40 error command "node" "/usr/local/bin/npm" "publish"
+41 error cwd /Users/paul/dev/nautical
+42 error node -v v0.10.29
+43 error npm -v 1.4.14
+44 verbose exit [ 1, true ]
