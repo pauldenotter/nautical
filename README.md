@@ -26,7 +26,7 @@ Then you can use the wrapper like this:
 var config         = require('./config.json').nautical,
 	nauticalClient = require('nautical').getClient(config);
 
-natucialClient.sizes.list(function(err, reply) {
+nauticalClient.sizes.list(function(err, reply) {
 	if (err) throw err;
 	console.log({
 		responseBody: reply.body,
