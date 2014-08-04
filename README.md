@@ -24,16 +24,27 @@ Then you can use the wrapper like this:
 
 ```javascript
 var config         = require('./config.json').nautical,
-	nauticalClient = require('nautical').getClient(config);
+	nauticalClient = require('nautical').getClient(config),
+	imageList = [];
 
-nauticalClient.sizes.list(function(err, reply) {
+nauticalClient.images.list(callback);
+
+function callback(err, reply) {
 	if (err) throw err;
 	console.log({
 		responseBody: reply.body,
 		statusCode: reply.res.statusCode,
 		headers: reply.res.headers
 	});
-});
+
+	imageList = imageList.concat(reply.body.images);
+
+	// get the next page
+	if ('function' === typeof reply.next)
+		reply.next(callback);
+	else
+		console.log(imageList);
+}
 ```
 
 ## Participate in development
