@@ -1,6 +1,6 @@
 {
   "name": "nautical",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Wrapper for DigitalOcean's v2 API",
   "repository": "git://github.com/pauldenotter/nautical",
   "main": "index.js",
