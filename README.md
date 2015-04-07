@@ -1,5 +1,5 @@
 # It's a wrap(per)
-This node module wraps DigitalOcean's new v2 API (currently in public beta).
+This node module wraps DigitalOcean's v2 API.
 
 ## Install
 Install the module by running the following commands on your command line
